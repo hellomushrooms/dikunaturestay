@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DIKU Nature Stay</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'naturestay/css/style.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">DIKU Nature Stay</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero text-center">
+    <img src="{% static 'naturestay/images/hero.jpeg' %}" class="img-fluid" alt="Nature Stay">
+    <div class="hero-text">
+      <h2>Escape to Nature at <b>DIKU Nature Stay</b></h2>
+      <a href="#" class="btn btn-primary">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Features Carousel -->
+  <section class="container my-4">
+    <div id="featuresCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <h3>🌿 Nature Trails</h3>
+        </div>
+        <div class="carousel-item">
+          <h3>🏡 Cozy Cottages</h3>
+        </div>
+        <div class="carousel-item">
+          <h3>🥗 Farm-to-Table Meals</h3>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#featuresCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#featuresCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="text-center p-4">
+    <img src="{% static 'naturestay/images/about.jpeg' %}" class="img-thumbnail mb-2" alt="About">
+    <p>Welcome to DIKU Nature Stay! A serene escape where nature meets comfort.</p>
+    <a href="#" class="btn btn-secondary">Learn More</a>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="container my-4 text-center">
+    <h3>Gallery</h3>
+    <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'naturestay/images/gallery1.jpeg' %}" class="d-block w-100" alt="Gallery 1">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'naturestay/images/gallery2.jpeg' %}" class="d-block w-100" alt="Gallery 2">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <a href="#" class="btn btn-secondary mt-2">View More</a>
+  </section>
+
+  <!-- What We Offer -->
+  <section class="container my-4 text-center">
+    <h3>What we offer</h3>
+    <div id="offerCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active"><h4>Cottages</h4></div>
+        <div class="carousel-item"><h4>Swimming Pool</h4></div>
+        <div class="carousel-item"><h4>Rain Dance</h4></div>
+        <div class="carousel-item"><h4>Karaoke</h4></div>
+        <div class="carousel-item"><h4>Campfire</h4></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#offerCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#offerCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
