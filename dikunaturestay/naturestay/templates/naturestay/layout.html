@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DIKU Nature Stay</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'naturestay/css/style.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-light fixed-top" style="background-color: #e0e5e2;">
+    <div class="container-fluid">
+      <a class="navbar-brand playfair" href="#">
+        <img src="{% static 'naturestay/images/logo.png' %}" alt="" width="30" height="24" class="d-inline-block align-text-top">
+      DIKU Nature Stay
+      </a>
+    </div>
+  </nav>
+
+  {% block content %}
+  
+  {% endblock %}
+
+  <section class="container my-4 text-center">
+  <h3 class="playfair">Location:</h3>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3896.365152450066!2d77.41882957269264!3d12.42537347585579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baef700754710d9%3A0xcb75237ac63ce578!2sDIKU%20Nature%20Stay!5e0!3m2!1sen!2sin!4v1760252921623!5m2!1sen!2sin" width="366" height="206.88" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-dark" style="background-color: #e0e5e2;">
+  <div class="container p-4 pb-0">
+    <section class="">
+      <div class="row">
+        <!-- About -->
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">DIKU Nature Stay</h6>
+          <p>
+            A serene escape where nature meets comfort.  
+            Come unwind amid greenery and fresh air.
+          </p>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <p><i class="bi bi-telephone"></i> +91 9449293499</p>
+          <p><i class="bi bi-envelope"></i> diku.stay@gmail.com</p>
+          <p><i class="bi bi-geo-alt"></i> Near Mekedatu, Karnataka</p>
+        </div>
+
+        <!-- Social -->
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+          <a href="https://www.instagram.com/dikunaturestay/" target="_blank" class="me-3 text-dark"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="me-3 text-dark"><i class="bi bi-facebook"></i></a>
+          <a href="https://wa.me/919449293499" target="_blank" class="me-3 text-dark"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2025 DIKU Nature Stay
+  </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
