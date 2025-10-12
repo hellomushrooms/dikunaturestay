@@ -26,3 +26,8 @@ body {
   font-family: "Playfair Display", serif;
   font-weight: 500;
 }
+
+.custom-width {
+  width: 75% !important;
+  max-width: 75%;
+}

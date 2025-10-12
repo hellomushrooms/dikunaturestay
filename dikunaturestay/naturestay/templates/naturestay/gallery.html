@@ -1,0 +1,45 @@
+{% extends 'naturestay/layout.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="container my-4">
+  <h3 class="playfair text-center mb-4">Gallery:</h3>
+
+  <div class="row justify-content-center">
+    <!-- Card 1 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'naturestay/images/gallery1.jpeg' %}" class="card-img-top" alt="Gallery Image 1">
+        <div class="card-body">
+          <p class="card-text text-center">Some quick example text for card 1.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'naturestay/images/gallery2.jpeg' %}" class="card-img-top" alt="Gallery Image 2">
+        <div class="card-body">
+          <p class="card-text text-center">Some quick example text for card 2.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'naturestay/images/cottage.jpeg' %}" class="card-img-top" alt="Gallery Image 3">
+        <div class="card-body">
+          <p class="card-text text-center">Some quick example text for card 3.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more cards as needed -->
+  </div>
+</section>
+
+
+{% endblock %}
