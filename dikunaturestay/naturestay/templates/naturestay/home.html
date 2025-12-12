@@ -7,7 +7,7 @@
     <img src="{% static 'naturestay/images/hero.jpeg' %}" class="img-fluid" alt="Nature Stay">
     <div class="hero-text">
       <h2>Escape to Nature at <b>DIKU Nature Stay</b></h2>
-      <a href="#" class="btn btn-primary">Book Now</a>
+      <a href="{% url 'contact' %}" class="btn btn-primary">Book Now</a>
     </div>
   </section>
 
@@ -46,7 +46,7 @@
   <section class="text-center p-4">
     <img src="{% static 'naturestay/images/cottage.jpeg' %}" class="img-thumbnail mb-2" alt="About">
     <h5>Welcome to DIKU Nature Stay! A serene escape where nature meets comfort.</h5>
-    <a href="#" class="btn btn-secondary">Learn More</a>
+    <a href="{% url 'about' %}" class="btn btn-secondary">Learn More</a>
   </section>
 
   <!-- Gallery Section -->

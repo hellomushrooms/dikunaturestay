@@ -16,7 +16,7 @@
 
   <nav class="navbar navbar-light fixed-top" style="background-color: #e0e5e2;">
     <div class="container-fluid">
-      <a class="navbar-brand playfair" href="#">
+      <a class="navbar-brand playfair" href="{% url 'home' %}">
         <img src="{% static 'naturestay/images/logo.png' %}" alt="" width="30" height="24" class="d-inline-block align-text-top">
       DIKU Nature Stay
       </a>
@@ -35,8 +35,8 @@
     <ul class="navbar-nav">
       <li class="nav-item"><a class="nav-link text-black" href="{% url 'home' %}">Home</a></li>
       <li class="nav-item"><a class="nav-link text-black" href="{% url 'gallery' %}">Gallery</a></li>
-      <li class="nav-item"><a class="nav-link text-black" href="#">About</a></li>
-      <li class="nav-item"><a class="nav-link text-black" href="#">Contact</a></li>
+      <li class="nav-item"><a class="nav-link text-black" href="{% url 'about' %}">About</a></li>
+      <li class="nav-item"><a class="nav-link text-black" href="{% url 'contact' %}">Contact</a></li>
     </ul>
   </div>
 </div>
